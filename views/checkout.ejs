@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout - <%= service %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Checkout for <%= service %></h1>
+  <form action="/pay" method="POST">
+    <input type="hidden" name="service" value="<%= service %>">
+    <label>Phone:</label><br>
+    <input type="text" name="phone" required><br>
+    <label>Amount (KES):</label><br>
+    <input type="number" name="amount" required><br><br>
+    <button type="submit">Pay Now</button>
+  </form>
+  <a href="/services">Back</a>
+</body>
+</html>
