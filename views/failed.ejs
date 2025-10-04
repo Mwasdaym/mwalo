@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Failed</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Payment Failed</h1>
+  <p><%= (typeof error !== 'undefined' && error) ? error : 'Something went wrong.' %></p>
+  <a href="/services">Try Again</a>
+</body>
+</html>
